@@ -345,10 +345,12 @@ Full-Width Styles
 
 .crx_download_link span {
 	position:relative;
-	left:40px;
+	width:128px;
+	text-align:center;
 	top:70px;
 	font-size:24px;
 	color:#FFFFFF;
+	display:block;
 }
 
 .crx_download_link:hover {
