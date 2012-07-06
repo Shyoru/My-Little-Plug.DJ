@@ -1,0 +1,17 @@
+{
+	"applicationName": {
+		"message": "My Little Plug.dj"
+	},
+	"favorites": {
+		"message": "Favorites"
+	},
+	"noFavorites": {
+		"message": "No favorites"
+	},
+	"history": {
+		"message": "History"
+	},
+	"noHistory": {
+		"message": "No history"
+	}
+}

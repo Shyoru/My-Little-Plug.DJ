@@ -1,0 +1,54 @@
+html {
+	background: url("chrome-extension://__MSG_@@extension_id__/images/background.png") no-repeat scroll center top #424242;
+}
+#logo {
+	background-image: url("chrome-extension://__MSG_@@extension_id__/images/logo.png")!important;
+	min-height:33px;
+	min-width:131px;
+}
+#create-room-button {
+	background-image: url("chrome-extension://__MSG_@@extension_id__/images/make_room.png")!important;
+	min-height:33px;
+	min-width:131px;
+}
+#room-wheel {
+	background-image: max-height:0px;
+	max-width:0px;
+}
+#user-points {
+	background-image: url("chrome-extension://__MSG_@@extension_id__/images/points.png")!important;
+	max-height:27px;
+	background-size: 100% 100%;
+	max-width:18px;
+}
+#user-fans {
+	background-image: url("chrome-extension://__MSG_@@extension_id__/images/fans.png")!important;
+	max-height:25px;
+	max-width:20px;
+}
+#button-dj-play.button-dj {
+	background-image: url("chrome-extension://__MSG_@@extension_id__/images/dj_join.png")!important;
+}
+#button-dj-quit.button-dj {
+	background-image: url("chrome-extension://__MSG_@@extension_id__/images/dj_leave.png")!important;
+}
+#button-dj-waitlist-join.button-dj {
+	background-image: url("chrome-extension://__MSG_@@extension_id__/images/waitlist_join.png")!important;
+}
+#button-dj-waitlist-leave.button-dj {
+	background-image: url("chrome-extension://__MSG_@@extension_id__/images/waitlist_leave.png")!important;
+}
+#user-image {
+	background-image: url("chrome-extension://__MSG_@@extension_id__/images/avatar_fluttershy.png")!important;
+	background-size:50px 50px!important;
+}
+#button-user-avatar {
+	background-image: url("chrome-extension://__MSG_@@extension_id__/images/avatar_fluttershy.png")!important;
+	background-size:32px 32px!important;
+}
+#button-lobby {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAA0CAYAAAAt+K7AAAAAAXNSR0IArs4c6QAAAAZiS0dEAJUAuwAtbHFemwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wHBg8ZJJI8/8wAAAMVSURBVGje7dpLbxNXGMbx/1w99kyIiYlTCgIqFhCSRrSh7Eo3bVcViBVIlI9SIdRvwxcoEksuK4Jkw6IOjQU2uXkcG9eJZ8a3YWFSqB3LLrHQqHqf3fG8PvL85szrI3uUe5nlEMnIqEIgUAIlUAIlUAIlESiBEiiBEiiBEiiJQAmUQAmUQP3fo09qombQpeF1aLdCwhA0DWIxFd1QicV618MtNQGYTZsD7+8/tj8elmF1igKarmBZKpaloihKdKC8Rodi0WdrK2C33qbdDkkkVGZSJratc+68DcCTx1UArl2fG5ij/9j+eFiG1em6guNozMyYnDptcWRanwjWRKD+erlHPu+xuDjLjz+fwzR1cn9ucf+PVYLA/wfqU/LbnZ8OfD2bzQ7UtdsdajWfbOYNjx4WqNVaLF+aJp7QogFVKPgAnDhpsLr68v1VdUjPTVEs1A41dz/IqDrDMDg/n8QtpcjldsivNVj4eioaUOH7fwZXVsocSxnYjk48EfD9leOcPXt54GRH9Z9xag/qcwCtVgvXdVlYPEYut8PmZhAdqIvffMnK03XKbpOy2zsxy1LZXA/Y2SljWdqB/WicDKs9qM/9q6mrHgCNRic6zfy7y7Ok01M8W3nD9vYuAL7fZW2tgaYrzF9wRvad3+8+OFSP6s/enhe97UE28xrT1Ll1ewlVNdneqpPNbJDJbPLqlTcANW7f+a+1H6fsBgCkUvHoQD15XCWRUDGMENsxiMctTp02yWRAUz/fnjYMQ7pdaDW7FF73vmCWL50A6tHZcHY6UCx4HJluoygeG+u9D3rlh6+Avz953nGbuVtqEoYhzWaX3XqHUqnJwsIcXxzXefs2Iivq19vfks+XefF8g1xuD01TSKcT3Lh5kYQdUKkcbrWO08z36wxDIXk0xi9X5zlzxqZYLE5kISiTeOzHcRxs2yaZTGIYBmEY4nkerutSr39Y9ktLS0P7Tv+x/fGo3vVxXe/W6+L7PpVKhWq1OrHbWpHno+TXA4ESKIESKIGSCJRACZRACZRACZREoARKoARKoARKAsA75NI87xC2zV0AAAAASUVORK5CYII=)!important;
+}
+.room-media {
+	left: 125px!important;
+}
