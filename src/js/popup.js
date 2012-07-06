@@ -87,3 +87,5 @@ function clickHandler(e) {
 }
 
 update();
+document.getElementById('title').innerHTML = chrome.i18n.getMessage("applicationName")
+document.getElementById('title').innerHTML = chrome.i18n.getMessage("version")

@@ -28,15 +28,10 @@ function runAfter() {
 		history.splice(0,0,newEntry);
 	}
 	chrome.extension.sendRequest({method: "setHistory",value: JSON.stringify(history)}, function(response) {
-		if (response.status == "success") {
-			//var notification = webkitNotifications.createNotification(chrome.extension.getURL("icon.png"),"History","History updated");
-			//notification.show();
-			console.log("[" + chrome.i18n.getMessage("applicationName") + "] Updated history");
-		} else {
-			//var notification = webkitNotifications.createNotification(chrome.extension.getURL("icon.png"),"History","Couldn't update history");
-			//notification.show();
-			console.log("[" + chrome.i18n.getMessage("applicationName") + "] Couldn't update history");
-		}
+		if (response.status == "success")
+			console.log("[" + chrome.i18n.getMessage("applicationName") + " " + chrome.i18n.getMessage("version") + "] Updated history");
+		else
+			console.log("[" + chrome.i18n.getMessage("applicationName") + " " + chrome.i18n.getMessage("version") + "] Couldn't update history");
 	});
 }
 

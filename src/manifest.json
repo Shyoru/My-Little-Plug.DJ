@@ -1,6 +1,6 @@
 {
 	"name": "__MSG_applicationName__",
-	"version": "0.1",
+	"version": "0.1.1",
 	"manifest_version": 2,
 	"default_locale": "en",
 	"description": "Ponify your plug.dj entertainment",
@@ -19,7 +19,6 @@
 		"default_popup": "popup.html"
 	},
 	"permissions": [
-		"notifications",
 		"tabs",
 		"webRequest",
 		"webRequestBlocking",
@@ -27,6 +26,7 @@
 		"http://www.plug.dj/*"
 	],
 	"options_page": "options.html",
+	"update_url": "http://tatdk.github.com/My-Little-Plug.DJ/updates.xml",
 	"web_accessible_resources": [
 		"icon.png",
 		"js/json.js",

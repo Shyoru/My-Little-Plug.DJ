@@ -1,11 +1,9 @@
 $(document).ready(function(e) {
+	
 	if (document.location.pathname == "/")
 		return;
-		
-	if (window.webkitNotifications.checkPermission() == 0)
-		window.webkitNotifications.requestPermission();
 	
-	
+	/*
 	API.addEventListener(API.WAIT_LIST_UPDATE, function(users) {
 		console.log("Wait list update");
 	});
@@ -21,7 +19,8 @@ $(document).ready(function(e) {
 		} else
 			window.webkitNotifications.requestPermission();
 	});
+	*/
 	
 	$("#room-score-positive").attr("title","Brohoofs");
-	$('#chat-messages').append('<div class="chat-update"><span class="chat-text">Running My Little Plug.DJ. Version 0.9</span></div>');
+	$('#chat-messages').append('<div class="chat-update"><span class="chat-text">Running My Little Plug.DJ. Version 0.1.1</span></div>');
 });
