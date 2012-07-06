@@ -1,6 +1,6 @@
 {
 	"name": "__MSG_applicationName__",
-	"version": "0.9",
+	"version": "0.1",
 	"manifest_version": 2,
 	"default_locale": "en",
 	"description": "Ponify your plug.dj entertainment",
