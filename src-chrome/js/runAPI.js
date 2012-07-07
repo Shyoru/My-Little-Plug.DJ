@@ -22,5 +22,4 @@ $(document).ready(function(e) {
 	*/
 	
 	$("#room-score-positive").attr("title","Brohoofs");
-	$('#chat-messages').append('<div class="chat-update"><span class="chat-text">Running My Little Plug.DJ. Version 0.2</span></div>');
 });

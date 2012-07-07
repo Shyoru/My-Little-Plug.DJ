@@ -1,26 +1,28 @@
 {
-	"applicationName": {
-		"message": "My Little Plug.dj"
-	},
-	"version": {
-		"message": "0.2"
-	},
-	"longVersion": {
-		"message": "Version 0.2"
-	},
-	"favorites": {
-		"message": "Favorites"
-	},
-	"noFavorites": {
-		"message": "No favorites"
-	},
-	"history": {
-		"message": "History"
-	},
-	"noHistory": {
-		"message": "No history"
-	},
-	"options": {
-		"message": "Options"
-	}
+    "applicationName":      { "message": "My Little Plug.dj" },
+    "version":              { "message": "0.2" },
+    "longVersion":          { "message": "Version 0.2" },
+    "running":              {
+                                "message": "Running $applicationName$. $longVersion$",
+                                "placeholders" : {
+                                    "applicationName":    { "content": "$1" },
+                                    "longVersion":        { "content": "$2" }
+                                }
+                            },
+    
+    "titleFavorites":       { "message": "Favorites" },
+    "titleHistory":         { "message": "History" },
+    "titleOptions":         { "message": "Options" },
+    
+    "noFavorites":          { "message": "No favorites" },
+    "noHistory":            { "message": "No history" },
+    
+    "wordsPoints":          { "message": "BITS" },
+    "wordsUsers":           { "message": "PONIES" },
+    "wordsWoot":            { "message": "BROHOOF!" },
+    "wordsNowPlaying":      { "message": "DJ-Pon3's playing:" },
+    "wordsTimeRemaining":   { "message": "Clock is ticking..." },
+    "wordsCrowdResponse":   { "message": "Herd response" },
+    "wordsVolume":          { "message": "Too loud?" },
+    "wordsCurrentDJ":       { "message": "The pony everypony should listen to" }
 }

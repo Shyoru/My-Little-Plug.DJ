@@ -19,7 +19,7 @@ chrome.tabs.onUpdated.addListener(checkForValidUrl);
 
 chrome.webRequest.onBeforeRequest.addListener(
 	function(details) {
-		if (details.url.indexOf("lang_en") > -1) {
+		if (details.url.indexOf("lang_") > -1) {
 			var filename = details.url.substring(details.url.lastIndexOf('/')+1);
 			return {redirectUrl: chrome.extension.getURL("js/lang/" + filename)};
 		} else {
@@ -27,7 +27,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 			//return {redirectUrl: chrome.extension.getURL("js/room.js")};
 		}
 	},
-	{urls: ["http://plug.dj/js/lang_en*","http://www.plug.dj/js/lang_en*","http://www.plug.dj/js/room.min.js*"]},
+	{urls: ["http://plug.dj/js/lang_*","http://www.plug.dj/js/lang_*","http://www.plug.dj/js/room.min.js*"]},
 	["blocking"]
 );
 
@@ -54,6 +54,12 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 	} else if (request.method == "APIvote" && request.vote != "") {
 		var notification = webkitNotifications.createNotification("icon.png","Vote",request.vote.vote == 1?"Brohoof":"Meh");
 		notification.show();
+	} else if (request.method == "i18n" && request.keys instanceof Array) {
+		var response = {};
+		request.keys.forEach(function(element, index, array) {
+			response[element] = chrome.i18n.getMessage(element);
+		});
+		sendResponse(response);
 	} else
 		sendResponse({status: "Error"});
 });

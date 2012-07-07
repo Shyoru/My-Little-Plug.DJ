@@ -55,7 +55,7 @@ function update() {
 
 function updateHistory() {
 	history = localStorage.mlpdj_history;
-	var historyHTML = '<strong>' + chrome.i18n.getMessage("history") + '</strong>';
+	var historyHTML = '<strong>' + chrome.i18n.getMessage("titleHistory") + '</strong>';
 	if (history != undefined) {
 		history = JSON.parse(history);
 		for (var i in history)
@@ -67,7 +67,7 @@ function updateHistory() {
 
 function updateFavorites() {
 	getFavorites()
-	var favoriteHTML = '<strong>' + chrome.i18n.getMessage("favorites") + '</strong>';
+	var favoriteHTML = '<strong>' + chrome.i18n.getMessage("titleFavorites") + '</strong>';
 	if (favorites.length > 0) {
 		for (i in favorites)
 			favoriteHTML += '<br /><a href="http://www.plug.dj/' + favorites[i]["urlTitle"] + '" target="_new">' + favorites[i]["title"] + '</a> <button id="remove" name="' + favorites[i]["urlTitle"] + '">-</button>';
