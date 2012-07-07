@@ -365,6 +365,12 @@ Full-Width Styles
 	background:url(../images/sprite_download.png) no-repeat top right;
 }
 
+.download {
+	width:50%;
+	float:left;
+	text-align:center;
+}
+
 #main_content_wrap {
 	background:#f2f2f2;
 	border-top:1px solid #111;

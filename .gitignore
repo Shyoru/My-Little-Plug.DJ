@@ -1,0 +1,3 @@
+# Ignore unpublished files for the extension
+/src-chrome
+/src-firefox
