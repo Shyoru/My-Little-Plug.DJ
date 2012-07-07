@@ -3,7 +3,10 @@
 		"message": "My Little Plug.dj"
 	},
 	"version": {
-		"message": "0.1.1"
+		"message": "0.2"
+	},
+	"longVersion": {
+		"message": "Version 0.2"
 	},
 	"favorites": {
 		"message": "Favorites"
@@ -16,5 +19,8 @@
 	},
 	"noHistory": {
 		"message": "No history"
+	},
+	"options": {
+		"message": "Options"
 	}
 }

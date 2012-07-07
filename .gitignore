@@ -1,2 +1,14 @@
+### WINDOWS ###
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+
+### FIREFOX VERSION ###
+#Will be made at a later point
 /src-firefox
-/images/Thumbs.db
+
+### FUTURE FEATURES ###
+#Custom avatars (set for v0.3)
+/src-chrome/js/room.js
+/src-chrome/images/avatars

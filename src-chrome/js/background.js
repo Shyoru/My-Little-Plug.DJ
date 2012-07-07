@@ -19,10 +19,15 @@ chrome.tabs.onUpdated.addListener(checkForValidUrl);
 
 chrome.webRequest.onBeforeRequest.addListener(
 	function(details) {
-		var filename = details.url.substring(details.url.lastIndexOf('/')+1);
-		return {redirectUrl: chrome.extension.getURL("js/lang/" + filename)};
+		if (details.url.indexOf("lang_en") > -1) {
+			var filename = details.url.substring(details.url.lastIndexOf('/')+1);
+			return {redirectUrl: chrome.extension.getURL("js/lang/" + filename)};
+		} else {
+			return {cancel: false}
+			//return {redirectUrl: chrome.extension.getURL("js/room.js")};
+		}
 	},
-	{urls: ["http://plug.dj/js/lang_en*","http://www.plug.dj/js/lang_en*"]},
+	{urls: ["http://plug.dj/js/lang_en*","http://www.plug.dj/js/lang_en*","http://www.plug.dj/js/room.min.js*"]},
 	["blocking"]
 );
 

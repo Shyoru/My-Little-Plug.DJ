@@ -29,9 +29,9 @@ function runAfter() {
 	}
 	chrome.extension.sendRequest({method: "setHistory",value: JSON.stringify(history)}, function(response) {
 		if (response.status == "success")
-			console.log("[" + chrome.i18n.getMessage("applicationName") + " " + chrome.i18n.getMessage("version") + "] Updated history");
+			console.log("[" + chrome.i18n.getMessage("applicationName") + "] Updated history");
 		else
-			console.log("[" + chrome.i18n.getMessage("applicationName") + " " + chrome.i18n.getMessage("version") + "] Couldn't update history");
+			console.log("[" + chrome.i18n.getMessage("applicationName") + "] Couldn't update history");
 	});
 }
 

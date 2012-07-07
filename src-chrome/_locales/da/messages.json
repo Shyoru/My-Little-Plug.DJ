@@ -2,9 +2,6 @@
 	"applicationName": {
 		"message": "My Little Plug.dj"
 	},
-	"version": {
-		"message": "0.1.1"
-	},
 	"favorites": {
 		"message": "Favoritter"
 	},
@@ -16,5 +13,11 @@
 	},
 	"noHistory": {
 		"message": "Ingen historik"
+	},
+	"noHistory": {
+		"message": "Ingen historik"
+	},
+	"options": {
+		"message": "Valgmuligheder"
 	}
 }

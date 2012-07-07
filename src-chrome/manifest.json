@@ -1,6 +1,6 @@
 {
 	"name": "__MSG_applicationName__",
-	"version": "0.1.1",
+	"version": "0.2",
 	"manifest_version": 2,
 	"default_locale": "en",
 	"description": "Ponify your plug.dj entertainment",
@@ -14,7 +14,7 @@
 			"js": ["js/jquery-1.7.2.min.js", "js/jquery-ui-1.8.21.custom.min.js", "js/run.js"]
 		}
 	],
-	"page_action": {
+	"browser_action": {
 		"default_icon": "icon.png",
 		"default_popup": "popup.html"
 	},
@@ -32,6 +32,7 @@
 		"js/json.js",
 		"js/jquery-1.7.2.min.js",
 		"js/jquery-ui-1.8.21.custom.min.js",
+		"js/room.js",
 		"js/runAPI.js",
 		"js/lang/lang_en.js",
 		"images/avatar_fluttershy.png",
@@ -43,6 +44,12 @@
 		"images/make_room.png",
 		"images/points.png",
 		"images/waitlist_join.png",
-		"images/waitlist_leave.png"
+		"images/waitlist_leave.png",
+		"images/avatars/animal01.png",
+		"images/avatars/animal02.png",
+		"images/avatars/animal04.png",
+		"images/avatars/animal07b.png",
+		"images/avatars/space01.png",
+		"images/avatars/space03b.png"
 	]
 }
