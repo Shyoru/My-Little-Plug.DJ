@@ -1,28 +1,41 @@
 {
-    "applicationName":      { "message": "My Little Plug.dj" },
-    "version":              { "message": "0.2" },
-    "longVersion":          { "message": "Version 0.2" },
-    "running":              {
-                                "message": "Kører $applicationName$. $longVersion$",
-                                "placeholders" : {
-                                    "applicationName":    { "content": "$1" },
-                                    "longVersion":        { "content": "$2" }
-                                }
-                            },
+    "applicationName":         { "message": "My Little Plug.dj" },
+    "version":                 { "message": "0.2" },
+    "longVersion":             { "message": "Version 0.2" },
+    "running":                 {
+                                   "message": "Kører $applicationName$. $longVersion$",
+                                   "placeholders" : {
+                                       "applicationName":    { "content": "$1" },
+                                       "longVersion":        { "content": "$2" }
+                                   }
+                               },
 
-    "titleFavorites":       { "message": "Favoritter" },
-    "titleHistory":         { "message": "Historik" },
-    "titleOptions":         { "message": "Valgmuligheder" },
+    "titleFavorites":          { "message": "Favoritter" },
+    "titleHistory":            { "message": "Historik" },
+    "titleRoom":               { "message": "Rum" },
+    "titleRooms":              { "message": "Rum" },
+    "titleAvatars":            { "message": "Poni Avatar" },
+	"titleAvatarsSelect":      { "message": "Vælg ponier" },
+    "titleOptions":            { "message": "Valgmuligheder" },
 
-    "noFavorites":          { "message": "Ingen favoritter" },
-    "noHistory":            { "message": "Ingen historik" },
+    "noFavorites":             { "message": "Ingen favoritter" },
+    "noHistory":               { "message": "Ingen historik" },
+	
+	"featureNotDone":          { "message": " (Funktion ikke klar)" },
+	
+	"settingsHistoryAmount":   { "message": "Max antal rum i historikken" },
+	"settingsRoomsBackground": { "message": "Baggrund i rum: (URL)" },
+	"settingsRoomsPonychat":   { "message": "Ponifiser chat:" },
+	
+	"infoRoomsBackground":     { "message": "Opdater direkte i allerede åbne faner" },
+	"infoRoomsPonychat":       { "message": "Opdater IKKE direkte i allerede åbne faner" },
     
-    "wordsPoints":          { "message": "BITS" },
-    "wordsUsers":           { "message": "PONIES" },
-    "wordsWoot":            { "message": "BROHOOF!" },
-    "wordsNowPlaying":      { "message": "DJ-Pon3's playing:" },
-    "wordsTimeRemaining":   { "message": "Clock is ticking..." },
-    "wordsCrowdResponse":   { "message": "Herd response" },
-    "wordsVolume":          { "message": "Too loud?" },
-    "wordsCurrentDJ":       { "message": "The pony everypony should listen to" }
+    "wordsPoints":             { "message": "BITS" },
+    "wordsUsers":              { "message": "PONIER" },
+    "wordsWoot":               { "message": "BROHOOF!" },
+    "wordsNowPlaying":         { "message": "DJ-Pon3 spiller:" },
+    "wordsTimeRemaining":      { "message": "Uret tikker..." },
+    "wordsCrowdResponse":      { "message": "Herd respons" },
+    "wordsVolume":             { "message": "For højt?" },
+    "wordsCurrentDJ":          { "message": "Ponien alle ponier skulle lytte til" }
 }

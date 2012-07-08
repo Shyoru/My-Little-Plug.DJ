@@ -32,6 +32,7 @@
 		"js/json.js",
 		"js/jquery-1.7.2.min.js",
 		"js/jquery-ui-1.8.21.custom.min.js",
+		"js/ponify.js",
 		"js/room.js",
 		"js/runAPI.js",
 		"js/lang/lang_de.js",

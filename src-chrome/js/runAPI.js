@@ -19,6 +19,10 @@ $(document).ready(function(e) {
 		} else
 			window.webkitNotifications.requestPermission();
 	});
+	
+	function updatePonify(newState) {
+		console.log("Got it!");
+	}
 	*/
 	
 	$("#room-score-positive").attr("title","Brohoofs");

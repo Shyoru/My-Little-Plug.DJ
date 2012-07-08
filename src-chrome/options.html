@@ -1,10 +1,63 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>My Little Plug.DJ Options</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="My Little Plug.DJ : Ponify plug.dj" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery-checkboxes.min.js"></script>
+	<script src="js/options.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/options.css">
+    <title>My Little Plug.DJ</title>
 </head>
+
 <body>
-<h1 id="title"></h1>
-Work in progress
-<script src="js/options.js"></script>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+            <h1 id="project_title"></h1>
+            <h2 class="locale" id="project_tagline"></h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+			<h3 class="locale" id="titleHistory"></h3>
+			<p><span class="locale" id="settingsHistoryAmount"></span>: <span id="historyAmount">10</span><br />
+			<input type="range" id="history_amount" name="history_amount" min="0" max="10" step="1" value="10" style="width:40%" /></p>
+			
+			<h3 class="locale" id="titleRooms"></h3>
+			<p><span class="locale" id="settingsRoomsBackground"></span><br /><input type="textbox" id="room_background" name="room_background" style="width:100%" /><br /><span class="locale" id="infoRoomsBackground" style="font-size:12px;font-style:italic;font-weight:bold;"></span></p>
+			<p><span class="locale" id="settingsRoomsPonychat"></span><br /><input class="iphoneStyle" id="room_ponychat" name="room_ponychat" type="checkbox" /><br /><span class="locale" id="infoRoomsPonychat" style="font-size:12px;font-style:italic;font-weight:bold;"></span></p>
+			
+			<h3 id="titleAvatars"></h3>
+			<div class="soooooooon">
+				<p><input class="iphoneStyle" id="avatars_enabled" name="avatars_enabled" type="checkbox" /></p>
+				<h5 class="locale" id="titleAvatarsSelect"></h5>
+				<div class="ponies">
+					<ul>
+						<li><img src="images/tempAvatars/Rainbow_Dash.png" /><br />Rainbow Dash</li>
+						<li><img src="images/tempAvatars/Twilight_Sparkle.png" /><br />Twilight Sparkle</li>
+						<li><img src="images/tempAvatars/Applejack.png" /><br />Applejack</li>
+					</ul>
+				</div>
+				<div class="ponies">
+					<ul>
+						<li><img src="images/tempAvatars/Fluttershy.png" /><br />Fluttershy</li>
+						<li><img src="images/tempAvatars/Rarity.png" /><br />Rarity</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+        </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+        <footer class="inner">
+            <p class="copyright">My Little Plug.dj | Website : <a href="http://tatdk.github.com/My-Little-Plug.DJ/">http://tatdk.github.com/My-Little-Plug.DJ/</a></p>
+        </footer>
+    </div>
 </body>
 </html>

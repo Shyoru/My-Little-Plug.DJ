@@ -1,7 +1,21 @@
+//API JavaScript file
 var s = document.createElement('script');
 s.src = chrome.extension.getURL("js/runAPI.js");
 document.head.appendChild(s);
 
+//Ponify chat
+chrome.extension.sendRequest({method: "getSettings", keys: ["room.ponychat"]}, function (settings) {
+	var s = document.createElement('script');
+	s.src = chrome.extension.getURL("js/ponify.js");
+	document.head.appendChild(s);
+	if (settings["room.ponychat"] != undefined && settings["room.ponychat"]) {
+		var s = document.createElement('script');
+		s.innerText = 'setTimeout(function() { console.log("Enable Ponify");Ponify.enabled = true;Ponify.ponify(document);document.addEventListener("DOMNodeInserted", Ponify.nodeInserted, true); },1500)';
+		document.head.appendChild(s);
+	}
+});
+
+//Ponify text that can't be changed by language file
 chrome.extension.sendRequest({method: "i18n", keys: ["wordsPoints","wordsUsers","wordsWoot","wordsNowPlaying","wordsTimeRemaining","wordsCrowdResponse","wordsVolume","wordsCurrentDJ"]}, function(response) {
 	var words = {
 		"points"         : response.wordsPoints,
@@ -40,6 +54,7 @@ chrome.extension.sendRequest({method: "i18n", keys: ["wordsPoints","wordsUsers",
 	}
 });
 
+//Chat message showing the current version
 chrome.extension.sendRequest({method: "i18n", keys: ["running","applicationName","longVersion"]}, function(response) {
 	$('#chat-messages').append('<div class="chat-update"><span class="chat-text">' + response.running.replace("$1",response.applicationName).replace("$2",response.longVersion) + '</span></div>');
 });

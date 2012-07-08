@@ -6,14 +6,17 @@ body {
 	text-align:center;
 	min-width:300px;
 }
-button {
-	width:20px;
-	border:thin solid #333333;
-}
 a {
 	text-decoration:none;
 	color:#334488;
 }
 a:hover {
 	text-decoration:underline;
+}
+.buttons {
+	display:inline-block;
+}
+.buttons button {
+	width:20px;
+	border:thin solid #333333;
 }

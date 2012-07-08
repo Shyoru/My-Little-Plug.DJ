@@ -1,28 +1,41 @@
 {
-    "applicationName":      { "message": "My Little Plug.dj" },
-    "version":              { "message": "0.2" },
-    "longVersion":          { "message": "Version 0.2" },
-    "running":              {
-                                "message": "Running $applicationName$. $longVersion$",
-                                "placeholders" : {
-                                    "applicationName":    { "content": "$1" },
-                                    "longVersion":        { "content": "$2" }
-                                }
-                            },
+    "applicationName":         { "message": "My Little Plug.dj" },
+    "version":                 { "message": "0.2" },
+    "longVersion":             { "message": "Version 0.2" },
+    "running":                 {
+                                   "message": "Running $applicationName$. $longVersion$",
+                                   "placeholders" : {
+                                       "applicationName":    { "content": "$1" },
+                                       "longVersion":        { "content": "$2" }
+                                   }
+                               },
     
-    "titleFavorites":       { "message": "Favorites" },
-    "titleHistory":         { "message": "History" },
-    "titleOptions":         { "message": "Options" },
+    "titleFavorites":          { "message": "Favorites" },
+    "titleHistory":            { "message": "History" },
+    "titleRoom":               { "message": "Room" },
+    "titleRooms":              { "message": "Rooms" },
+    "titleAvatars":            { "message": "Pony Avatars" },
+	"titleAvatarsSelect":      { "message": "Select ponies" },
+    "titleOptions":            { "message": "Options" },
     
-    "noFavorites":          { "message": "No favorites" },
-    "noHistory":            { "message": "No history" },
+    "noFavorites":             { "message": "No favorites" },
+    "noHistory":               { "message": "No history" },
+	
+	"featureNotDone":          { "message": " (Feature not done)" },
+	
+	"settingsHistoryAmount":   { "message": "Max rooms in history" },
+	"settingsRoomsBackground": { "message": "Background in rooms: (URL)" },
+	"settingsRoomsPonychat":   { "message": "Ponify chat:" },
+	
+	"infoRoomsBackground":     { "message": "Updates live in already opened tabs" },
+	"infoRoomsPonychat":       { "message": "Doesn't update live in already opened tabs" },
     
-    "wordsPoints":          { "message": "BITS" },
-    "wordsUsers":           { "message": "PONIES" },
-    "wordsWoot":            { "message": "BROHOOF!" },
-    "wordsNowPlaying":      { "message": "DJ-Pon3's playing:" },
-    "wordsTimeRemaining":   { "message": "Clock is ticking..." },
-    "wordsCrowdResponse":   { "message": "Herd response" },
-    "wordsVolume":          { "message": "Too loud?" },
-    "wordsCurrentDJ":       { "message": "The pony everypony should listen to" }
+    "wordsPoints":             { "message": "BITS" },
+    "wordsUsers":              { "message": "PONIES" },
+    "wordsWoot":               { "message": "BROHOOF!" },
+    "wordsNowPlaying":         { "message": "DJ-Pon3's playing:" },
+    "wordsTimeRemaining":      { "message": "Clock is ticking..." },
+    "wordsCrowdResponse":      { "message": "Herd response" },
+    "wordsVolume":             { "message": "Too loud?" },
+    "wordsCurrentDJ":          { "message": "The pony everypony should listen to" }
 }
