@@ -10,7 +10,7 @@ chrome.extension.sendRequest({method: "getSettings", keys: ["room.ponychat"]}, f
 	document.head.appendChild(s);
 	if (settings["room.ponychat"] != undefined && settings["room.ponychat"]) {
 		var s = document.createElement('script');
-		s.innerText = 'setTimeout(function() { console.log("Enable Ponify");Ponify.enabled = true;Ponify.ponify(document);document.addEventListener("DOMNodeInserted", Ponify.nodeInserted, true); },1500)';
+		s.innerText = 'setTimeout(function() { Ponify.enabled = true;Ponify.ponify(document);document.addEventListener("DOMNodeInserted", Ponify.nodeInserted, true); },1500)';
 		document.head.appendChild(s);
 	}
 });

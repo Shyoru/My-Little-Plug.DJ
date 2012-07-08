@@ -21,15 +21,19 @@ function updateAllBackgrounds() {
 }
 
 function getAllTabs() {
-	var refreshTabs = confirm("Already open tabs must be refreshed to get all features.\nWill you update them now?");
+	/*var asked = false;*/
+	var refreshTabs = false;
 	chrome.tabs.query({},function(allTabs) {
 		allTabs.forEach(function(tab, i, arr) {
 			if (tab.url.substring(0,4) == "http" && tab.url.match(/:\/\/(www\.)?(.[^/:]+)/)[2] == "plug.dj") {
 				var found = false;
 				var tabId = tab.id;
 				tabs.forEach(function(element, index, array) {
-					if (element == tabId)
+					if (element == tabId) {
 						found = true;
+						/*if (!asked)
+							refreshTabs = confirm("Already open tabs must be refreshed to get all features.\nWill you update them now?");*/
+					}
 				});
 				if (!found) {
 					if (refreshTabs)

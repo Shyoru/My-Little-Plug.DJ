@@ -1,7 +1,7 @@
 {
     "applicationName":         { "message": "My Little Plug.dj" },
-    "version":                 { "message": "0.2" },
-    "longVersion":             { "message": "Version 0.2" },
+    "version":                 { "message": "0.2.1" },
+    "longVersion":             { "message": "Version 0.2.1" },
     "running":                 {
                                    "message": "Running $applicationName$. $longVersion$",
                                    "placeholders" : {

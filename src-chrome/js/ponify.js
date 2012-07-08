@@ -97,6 +97,7 @@ Ponify.replace = [
 	["handed", "hoofed"],
 	["anyone", "anypony"],
 	["woman", "mare"],
+	["lobby", "shed"],
 	["boner", "wingboner"],
 	["troll", "parasprite"],
 	["human", "pony"],
