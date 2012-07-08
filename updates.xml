@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
   <app appid='khicabiojjkikbgbndmhgmikhfkicbbb'>
-    <updatecheck codebase='https://github.com/TATDK/My-Little-Plug.DJ/raw/master/My%20Little%20Plug.dj%200.1.1.crx' version='0.1.1' />
+    <updatecheck codebase='https://github.com/TATDK/My-Little-Plug.DJ/raw/master/My%20Little%20Plug.dj%200.2.crx' version='0.2' />
   </app>
 </gupdate>
